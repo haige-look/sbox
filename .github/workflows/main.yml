@@ -21,7 +21,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.docker_TOKEN }}
 
       - name: Build and push multi-platform Docker image
         run: |
